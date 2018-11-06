@@ -69,4 +69,4 @@
 
 16.)
 	SELECT FirstName FROM northwind.employees
-	Where ReportsTo = 2;
+	Where ReportsTo = (SELECT EmployeeID FROM northwind.Employees Where FirstName='Andrew');
